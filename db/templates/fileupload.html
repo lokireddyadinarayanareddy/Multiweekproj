@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload File & Enter Email IDs</h1>
+
+        <form action="{{ url_for('fileupload') }}" method="post" enctype="multipart/form-data">
+            <!-- File Upload -->
+            <label for="file">Choose a file:</label>
+            <input type="file" id="file" name="file" required><br><br>
+            
+            <!-- Email Inputs -->
+            <label for="email1">Email 1:</label>
+            <input type="email" id="email1" name="email1" required><br><br>
+
+            <label for="email2">Email 2:</label>
+            <input type="email" id="email2" name="email2" required><br><br>
+<!-- 
+            <label for="email3">Email 3:</label>
+            <input type="email" id="email3" name="email3" required><br><br>
+
+            <label for="email4">Email 4:</label>
+            <input type="email" id="email4" name="email4" required><br><br>
+
+            <label for="email5">Email 5:</label>
+            <input type="email" id="email5" name="email5" required><br><br> -->
+            
+            <!-- Submit Button -->
+            {{message}}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+database_name = 'defaultdb'
+database_user = 'admin'
+database_password = 'multiweekdb'
+database_endpoint = 'multiweekdb.clnopyq3sfwe.us-east-1.rds.amazonaws.com'
+database_port = '3306'
